@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
+Language Explanations</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="description" content="INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
+Language Explanations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="image" content="./figures/INSIGHT-Framework-1.png">
+
+
+     <!--FACEBOOK-->
+     <meta property="og:image" content="./figures/INSIGHT-Framework-1.png">
+     <meta property="og:image:type" content="image/png">
+     <meta property="og:image:width" content="1196">
+     <meta property="og:image:height" content="705">
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://craftjarvis.org/JARVIS-1"/>
+     <meta property="og:title" content="INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
+Language Explanations" />
+     <meta property="og:description"
+         content="Project page for CraftJarvis JARVIS-1." />
+ 
+     <!--TWITTER-->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
+Language Explanations" />
+     <meta name="twitter:description"
+         content="Project page for CraftJarvis JARVIS-1." />
+     <meta name="twitter:image" content="./figures/INSIGHT-Framework-1.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+	
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHNLP4KVZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LHNLP4KVZV');
+</script>
+<body>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <b><font size="+6">INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
+Language Explanations</font></b></br> 
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                <br>
+                <li><a href="https://zhwang4ai.github.io/" target="_blank">Lirui Luo</a></li>
+                <li><a href="https://phython96.github.io/" target="_blank">Guoxi Zhang</a></li>
+                <li><a href="https://liuanji.github.io/" target="_blank">Hongming Xu</a></li>
+                <li><a href="https://craftjarvis.org/JARVIS-1">Yaodong Yang</a></li>
+                <li><a href="https://craftjarvis.org/JARVIS-1">Cong Fang</a></li>
+                <li><a href="https://zero-lab-pku.github.io/personwise/liangyitao/" target="_blank">Qing Li</a></li>
+                <br>
+                <br>
+                    <a href="https://www.craftjarvis.org/">
+                        <image src="images/favicon.ico" width="50px" height="50px"> 
+                            <font size="4">Team Machine Learing</font><br>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-2 text-center">
+                <a href="https://arxiv.org/abs/2311.05997">
+                <image src="images/paper.png" width="50px" height="50px">
+                <h4><strong>Paper</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://github.com/CraftJarvis/JARVIS-1">
+                <image src="images/github.png" width="50px" height="50px">
+                <h4><strong>Code</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://twitter.com/jeasinema/status/1723900032653643796">
+                <image src="images/twitter.png" width="50px" height="50px">
+                <h4><strong>Twitter</strong></h4>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                    <image src="images/minecraft_technical_tree.png" width="100%"></image>
+                </video>
+            </div>
+        </div> -->
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <!-- <video id="v0" width="100%" preload="metadata" playsinline muted onclick="setAttribute('controls', 'true');" loop autoplay>
+                    <source src="videos/jarvis.mp4" type="video/mp4">
+                </video> -->
+                <p style="text-align:center;">
+                    <image src="figures/teaser-1.png" width="100%">
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Neuro-symbolic reinforcement learning (NS-RL) has emerged as a promising paradigm for explainable decision-making, characterized by the interpretability of symbolic policies.
+For tasks with visual observations, NS-RL entails structured representations for states, but previous algorithms are unable to refine the structured states with reward signals due to a lack of efficiency.
+Accessibility is also an issue, as extensive domain knowledge is required to interpret current symbolic policies.
+In this paper, we present a framework that is capable of learning structured states and symbolic policies simultaneously, whose key idea is to overcome the efficiency bottleneck by distilling vision foundation models into a scalable perception module.
+Moreover, we design a pipeline that uses large language models to generate concise and readable language explanations for policies and decisions.
+In experiments on nine Atari tasks, our approach demonstrates substantial performance gains over existing NSRL methods.
+We also showcase explanations for policies and decisions.
+                </p>
+                <h3 id="vlm">Approach Overview</h3>
+
+                <p style="text-align:center;">
+                    <image src="figures/ICML-Framework-1.png" width="100%">
+                </p>
+                <p>
+                    In this paper, we present a framework called INSIGHT to address these issues.
+                    As illustrated above, INSIGHT is able to learn the object coordinates and symbolic policies simultaneously, and it can explain learned policies and specific decisions in natural language.
+                    The key idea for learning structured states is to distill vision foundation models into a scalable perception module that overcomes the efficiency drawback of previous approaches.
+                    We use the equation learner (EQL) for learning symbolic policies from object coordinates, which allows both the perception module and the symbolic policy to be trained with rewards.
+                </p>
+                    Moreover, we develop a pipeline for explaining policies and
+                    decisions in natural language using large language models
+                    (LLMs), which reduces the cognitive load on users to un
+                    derstand the construction of symbolic policies learned by
+                    INSIGHT. Through a step called concept grounding, we
+                    help LLMs to associate general concepts such as objects
+                    and motions with variables in the symbolic policies. Then,
+                    as illustrated in above, LLMs are instruct to interpret the
+                    general patterns of decision-making based on the expres
+                    sions of symbolic policies and specific decision based on
+                    specific values of object coordinates.
+                <p>
+                </p>
+                <p>
+                    We verify the efficacy of INSIGHT and its model design with extensive experiments on nine Atari games. INSIGHT outperforms all existing approaches for NS-RL (CGP, Diffses, DSP, and NUDGE).
+                    We show that its empirical performance can be attributed to the refinement of structured states with reward information and our approach for learning symbolic policies.
+                    We also present examples of policy interpretations and decision explanations.
+                    In summary, our contributions are three-fold:
+                </p>
+                <p>
+                    <ul>
+                        <li>We propose an NS-RL framework that can refine structured states with both visual and reward information.<br>
+                            <li>We develop a pipeline for explaining symbolic policies in natural languages.<br>
+                                <li>We demonstrate the efficacy of INSIGHT on nine Atari games and showcase its policy explanations.
+                    </ul>
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3 id="vlm">Reward Finetune</h3>
+                <em><h5 id="vlm">Better performance</h5></em>
+                <p>
+                    INSIGHT benefits from refining structured states with both visual and reward information. We now examine this claim from the perspective of task
+                    performance and coordinate prediction.
+                </p>
+                <p>
+                    The ablation 'Fixed' shows that when compared to the variant Fixed, INSIGHT has significant better performance for all five task, demonstrating that INSIGHT's performance is largely determined by its ability to refine structured states with reward signals.
+                </p>
+                <p style="text-align:center;">
+                    <image src="figures/methodablation-1.png" width="100%">
+                </p>
+                <em><h5 id="vlm">More accurate</h5></em>
+                <p>
+                    For coordinate prediction, we report the mean absolute error (MAE) of predicted coordinates, which is the result of dividing the total absolute error of coordinate prediction on a sample by the number of objects, the number of stacked frames, and two as we are predicting the X and Y coordinates.
+It is within [0,1], and the lower the better.
+Since not all objects are relevant for symbolic policies, we include a variant of MAE, F-MAE, which only considers relevant objects.
+                </p>
+                <p>
+                    The results before and after policy learning are clearly shown in the figures and videos below. It can be seen that policy training helps the coordinates to be predicted more accurately, and helps to remove the illusion of prediction (predicting non-existent objects).
+                </p>
+                <p style="text-align:center;">
+                    <image src="figures/MAE.png" width="100%">
+                </p>
+                <p style="text-align:center;">
+                    <image src="figures/accuracy.png" width="100%">
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Videos before and after policy learing</h5>
+                    <div class="card-body">
+                        <div class="row">
+                        
+                        <div class="col-md-6 mb-3">
+                            <video width="100%" preload="metadata" playsinline controls loop muted>
+                                <source src="videos/Freeway_before264.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <video width="100%" preload="metadata" playsinline controls loop muted>
+                                <source src="videos/Freeway264.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        </div>
+
+                        <p> <i>For Freeway</i> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3 id="vlm">Policy illustration</h3>
+                <p>
+                    Here is an example for language explanation for Pong. <strong>Left</strong>: interpretations for a learned policy. The interpretations identify influential input variables and summarize triggering patterns of actions. <strong>Right</strong>: explanations for an action taken at a state. The four images located at the bottom illustrate the state. The motion of the ball and the opponent's paddle are deduced from input variables, which are used for supporting explanations of actions.
+                </p>
+                
+                <p style="text-align:center;">
+                    <image src="figures/policy-up.png" width="100%">
+                </p>
+
+                <p>
+                    You can view all prompts and LLM responses in the two buttons below.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-2 text-center">
+                <a href="https://chat.openai.com/share/315e115f-98cc-4214-8338-1bc81c4d09ec">
+                <image src="images/chatgpt.png" width="50px" height="50px">
+                <h4><strong>Policy Interpretation</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://chat.openai.com/share/4cd23ba8-b3b3-417d-94ce-a538b4c47366">
+                <image src="images/chatgpt.png" width="50px" height="50px">
+                <h4><strong>Decision Explanation</strong></h4>
+                </a>
+            </div>
+        </div>
+
+
+
+@article{luo2024insight,
+    title   = {INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
+Language Explanations},
+    author  = {Lirui Luo and Guoxi Zhang and Hongming Xu and Yaodong Yang and Cong Fang and Qing Li},
+    year    = {2024},
+    journal = {arXiv preprint arXiv: 2311.05997}
+    }
+                </code></pre>
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="form-group col-md-12">
+                    <textarea id="bibtex" class="form-control" readonly>
+</textarea>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
