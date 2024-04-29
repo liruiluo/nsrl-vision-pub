@@ -55,7 +55,7 @@ The INSIGHT framework.
 # Results
 
 
-Here is the segmentation videos before and after policy learing for Freeway:
+Here is the segmentation videos before and after policy learing on Freeway:
 
 <div align="center">
 <table>
@@ -119,13 +119,13 @@ pip install git+https://github.com/openai/CLIP.git
 ```
 
 
-# Download necessary ckpts to cleanrl/sam_track/ckpt
+## Download necessary ckpts to cleanrl/sam_track/ckpt
 
 [Track Model](https://drive.google.com/file/d/1g4E-F0RPOx9Nd6J7tU9AE1TjsouL4oZq/view)
 
 [FastSAM](https://drive.google.com/file/d/1m1sjY4ihXBU1fZXdQ-Xdj-mDltW-2Rqv/view)
 
-# Train INSIGHT
+## Train INSIGHT
 
 > To generate dataset, use
 ```bash
@@ -150,7 +150,7 @@ python train_policy_metadrive.py --wandb-project-name nsrl-eql --run-name benchm
 ```
 
 
-## Citation
+# Citation
 
 If you find our code implementation helpful for your own research or work, please cite our paper.
 
