@@ -119,7 +119,7 @@ pip install git+https://github.com/openai/CLIP.git
 ```
 
 
-## Download necessary ckpts to cleanrl/sam_track/ckpt
+## Download Necessary Ckpts to cleanrl/sam_track/ckpt
 
 [Track Model](https://drive.google.com/file/d/1g4E-F0RPOx9Nd6J7tU9AE1TjsouL4oZq/view)
 
