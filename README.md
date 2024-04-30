@@ -5,7 +5,7 @@
 **[Lirui Luo](https://www.notion.so/bigai-ml/Home-of-BIGAI-ML-89e1b164abe441baa83e693aa715979a), [Guoxi Zhang](https://guoxizhang.com/), [Hongming Xu](https://www.notion.so/bigai-ml/Home-of-BIGAI-ML-89e1b164abe441baa83e693aa715979a), [Yaodong Yang](https://www.yangyaodong.com/), [Cong Fang](https://congfang-ml.github.io/), [Qing li](https://liqing-ustc.github.io/)**
 
 
-| [```Website```](https://vita-group.github.io/DiffSES) | [```Arxiv```](https://arxiv.org/abs/2403.12451) |
+| [```Website```](https://liruiluo.github.io/nsrl-vision-pub/) | [```Arxiv```](https://arxiv.org/abs/2403.12451) |
 :------------------------------------------------------:|:-----------------------------------------------:|
 
 <img src="Pages/figures/teaser-1.png" width="568">
