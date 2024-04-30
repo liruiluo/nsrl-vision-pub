@@ -61,8 +61,9 @@ Here is the segmentation videos before and after policy learing on Freeway:
 <table>
 <tr>
 <td>
-<video src="https://github.com/liruiluo/nsrl-vision-pub/assets/77096730/9552d689-3910-4160-a270-cec9309826ac" controls>
+<video src="https://github.com/liruiluo/nsrl-vision-pub/assets/77096730/627e065b-686a-488b-b6d6-f84c0514ec56" controls>
 </video>
+
 </td>
 </tr>
 <tr>
@@ -77,7 +78,7 @@ The video before.
 <table>
 <tr>
 <td>
-<video src="https://github.com/liruiluo/nsrl-vision-pub/assets/77096730/627e065b-686a-488b-b6d6-f84c0514ec56" >
+<video src="https://github.com/liruiluo/nsrl-vision-pub/assets/77096730/9552d689-3910-4160-a270-cec9309826ac" controls>
 </video>
 </td>
 </tr>
