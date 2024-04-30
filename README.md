@@ -16,26 +16,12 @@
 
 # Introduction
 
-Neuro-symbolic reinforcement learning (NS-RL)
-has emerged as a promising paradigm for explain-
-able decision-making, characterized by the inter-
-pretability of symbolic policies. NS-RL entails
-structured state representations for tasks with vi-
-sual observations, but previous methods are un-
-able to refine the structured states with rewards
-due to a lack of efficiency. Accessibility also re-
-mains to be an issue, as extensive domain knowl-
-edge is required to interpret symbolic policies.
-In this paper, we present a framework for learn-
-ing structured states and symbolic policies jointly,
-whose key idea is to distill vision foundation mod-
-els into a scalable perception module and refines
-it during policy learning. Moreover, we design
-a pipeline to generate language explanations for
-policies and decisions using large language mod-
-els. In experiments on nine Atari tasks, we verify
-the efficacy of our approach, and we also present
-explanations for policies and decisions.
+Neuro-symbolic reinforcement learning (NS-RL) has emerged as a promising paradigm for explainable decision-making, characterized by the interpretability of symbolic policies.
+NS-RL entails structured state representations for tasks with visual observations, but previous methods are unable to refine the structured states with rewards due to a lack of efficiency.
+Accessibility also remains to be an issue, as extensive domain knowledge is required to interpret symbolic policies.
+In this paper, we present a framework for learning structured states and symbolic policies jointly, whose key idea is to distill vision foundation models into a scalable perception module and refines it during policy learning.
+Moreover, we design a pipeline to generate language explanations for policies and decisions using large language models.
+In experiments on nine Atari tasks, we verify the efficacy of our approach, and we also present explanations for policies and decisions.
 
 <div align="center">
 <table>
