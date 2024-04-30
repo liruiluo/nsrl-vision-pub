@@ -102,13 +102,13 @@ Language Explanations</font></b></br>
 
         <div class="row justify-content-md-center">
             <div class="col-md-2 text-center">
-                <a href="https://arxiv.org/abs/2311.05997">
+                <a href="https://arxiv.org/abs/2403.12451">
                 <image src="images/paper.png" width="50px" height="50px">
                 <h4><strong>Paper</strong></h4>
                 </a>
             </div>
             <div class="col-md-2 text-center">
-                <a href="https://github.com//INSIGHT">
+                <a href="https://github.com/liruiluo/nsrl-vision-pub">
                 <image src="images/github.png" width="50px" height="50px">
                 <h4><strong>Code</strong></h4>
                 </a>
@@ -127,7 +127,7 @@ Language Explanations</font></b></br>
                     <source src="videos/jarvis.mp4" type="video/mp4">
                 </video> -->
                 <p style="text-align:center;">
-                    <image src="figures/teaser-1.png" width="100%">
+                    <image src="figures/teaser-1.png" width="50%">
                 </p>
             </div>
         </div>
@@ -152,62 +152,147 @@ We also showcase explanations for policies and decisions.
                     <image src="figures/ICML-Framework-1.png" width="100%">
                 </p>
                 <p>
-                    I
+                    INSIGHT consists of three components: a perception module, a policy learning module, and a policy explanation module. The perception module learns to predict object coordinates using a frame-symbol dataset distilled from vision foundation models. The policy learning module is responsible for learning coordinate-based symbolic policies. In particular, to address with the limited expressiveness of object coordinates, it uses a neural actor to interact with the environment. The policy explanation module can generate policy interpretations and decision explanations using task description, policy description, and values of object coordinates.
                 
             </div>
         </div>
 
+        
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3 id="vlm">Reward Finetune</h3>
-                <em><h5 id="vlm">Better performance</h5></em>
+                <h3 id="vlm">The Impact of Policy Learning on Segmentation</h3>
                 <p>
-                    INSIGHT benefits from refining structured states with both visual and reward information. We now examine this claim from the perspective of task
-                    performance and coordinate prediction.
+                    Here are the segmentation results for nine Atari games, before and after policy learning. It has been observed that the accuracy of policy-irrelevant objects decreases, whereas the accuracy of policy-related objects increases.
                 </p>
-                <p>
-                    The ablation 'Fixed' shows that when compared to the variant Fixed, INSIGHT has significant better performance for all five task, demonstrating that INSIGHT's performance is largely determined by its ability to refine structured states with reward signals.
-                </p>
-                <p style="text-align:center;">
-                    <image src="figures/methodablation-1.png" width="100%">
-                </p>
-                <em><h5 id="vlm">More accurate</h5></em>
-                <p>
-                    For coordinate prediction, we report the mean absolute error (MAE) of predicted coordinates, which is the result of dividing the total absolute error of coordinate prediction on a sample by the number of objects, the number of stacked frames, and two as we are predicting the X and Y coordinates.
-It is within [0,1], and the lower the better.
-Since not all objects are relevant for symbolic policies, we include a variant of MAE, F-MAE, which only considers relevant objects.
-                </p>
-                <p>
-                    The results before and after policy learning are clearly shown in the figures and videos below. It can be seen that policy training helps the coordinates to be predicted more accurately, and helps to remove the illusion of prediction (predicting non-existent objects).
-                </p>
-                <p style="text-align:center;">
-                    <image src="figures/MAE.png" width="100%">
-                </p>
-                <p style="text-align:center;">
-                    <image src="figures/accuracy.png" width="100%">
-                </p>
-                
-            </div>
-        </div>
-
-        <div class="row justify-content-md-center mt-4">
-            <div class="col-md-10 col-lg-8">
 
                 <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Videos before and after policy learing</h5>
+                    <h5 class="card-header">Videos before and after policy learing.</h5>
                     <div class="card-body">
-                        <div class="row">
-                        
-                        <div class="col-md-6 mb-3">
-                            <video width="100%" preload="metadata" playsinline controls loop muted>
-                                <source src="videos/Freeway_before264.mp4" type="video/mp4">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Freeway</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/FreewayNoFrameskip-v4before_before-264.mp4" type="video/mp4">
                             </video>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <video width="100%" preload="metadata" playsinline controls loop muted>
-                                <source src="videos/Freeway264.mp4" type="video/mp4">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p> &emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/FreewayNoFrameskip-v4-264.mp4" type="video/mp4">
                             </video>
+                            </div>
                         </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Seaquest</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/SeaquestNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/SeaquestNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>BeamRider</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/BeamRiderNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/BeamRiderNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Breakout</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/BreakoutNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/BreakoutNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Enduro</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/EnduroNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/EnduroNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>MsPacman</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/MsPacmanNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/MsPacmanNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Pong</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/PongNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/PongNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Qbert</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/QbertNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/QbertNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>SpaceInvaders</p>
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/SpaceInvadersNoFrameskip-v4before_before-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>&emsp;</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/SpaceInvadersNoFrameskip-v4-264.mp4" type="video/mp4">
+                            </video>
+                            </div>
                         </div>
 
                         <p> <i>For Freeway</i> </p>
@@ -251,13 +336,16 @@ Since not all objects are relevant for symbolic policies, we include a variant o
 
 
 
-@article{luo2024insight,
-    title   = {INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with
-Language Explanations},
-    author  = {Lirui Luo and Guoxi Zhang and Hongming Xu and Yaodong Yang and Cong Fang and Qing Li},
-    year    = {2024},
-    journal = {arXiv preprint arXiv: 2311.05997}
-    }
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">BibTex</h3>
+                <pre><code>
+                    @article{luo2024insight,
+                        title={INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with Language Explanations},
+                        author={Luo, Lirui and Zhang, Guoxi and Xu, Hongming and Yang, Yaodong and Fang, Cong and Li, Qing},
+                        journal={arXiv preprint arXiv:2403.12451},
+                        year={2024}
+                      }
                 </code></pre>
             </div>
         </div>
