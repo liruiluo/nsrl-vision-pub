@@ -61,7 +61,7 @@ Here is the segmentation videos before and after policy learing on Freeway:
 <table>
 <tr>
 <td>
-<video src="Pages/videos/Freeway_before264.mp4">
+<video src="Pages/videos/Freeway_before264.mp4" controls>
 </video>
 </td>
 </tr>
@@ -77,7 +77,7 @@ The video before.
 <table>
 <tr>
 <td>
-<video src="Pages/videos/Freeway264.mp4">
+<video src="Pages/videos/Freeway264.mp4" controls>
 </video>
 </td>
 </tr>
