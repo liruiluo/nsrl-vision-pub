@@ -2,7 +2,7 @@
 
 # INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with Language Explanations
 
-**[Lirui Luo](https://www.notion.so/bigai-ml/Home-of-BIGAI-ML-89e1b164abe441baa83e693aa715979a), [Guoxi Zhang](https://guoxizhang.com/), [Hongming Xu](https://www.notion.so/bigai-ml/Home-of-BIGAI-ML-89e1b164abe441baa83e693aa715979a), [Yaodong Yang](https://www.yangyaodong.com/), [Cong Fang](https://congfang-ml.github.io/), [Qing li](https://liqing-ustc.github.io/)**
+**[Lirui Luo](), [Guoxi Zhang](https://guoxizhang.com/), [Hongming Xu](), [Yaodong Yang](https://www.yangyaodong.com/), [Cong Fang](https://congfang-ml.github.io/), [Qing li](https://liqing-ustc.github.io/)**
 
 
 | [```Website```](https://liruiluo.github.io/nsrl-vision-pub/) | [```Arxiv```](https://arxiv.org/abs/2403.12451) |
@@ -27,7 +27,7 @@ In experiments on nine Atari tasks, we verify the efficacy of our approach, and 
 <table>
 <tr>
 <td>
-<img src="Pages/figures/ICML-Framework-1.png" >
+<img src="docs/figures/ICML-Framework-1.png" >
 </td>
 </tr>
 <tr>
