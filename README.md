@@ -8,7 +8,7 @@
 | [```Website```](https://liruiluo.github.io/nsrl-vision-pub/) | [```Arxiv```](https://arxiv.org/abs/2403.12451) |
 :------------------------------------------------------:|:-----------------------------------------------:|
 
-<img src="Pages/figures/teaser-1.png" width="568">
+<img src="docs/figures/teaser-1.png" width="568">
 
 </div>
 
