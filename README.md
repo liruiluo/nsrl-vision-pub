@@ -152,7 +152,7 @@ If you find our code implementation helpful for your own research or work, pleas
 
 # Contact
 
-For any queries, please [raise an issue](https://github.com/VITA-Group/DiffSES/issues/new) or
+For any queries, please [raise an issue](https://github.com/liruiluo/nsrl-vision-pub/issues/new) or
 contact [Qing Li](https://liqing-ustc.github.io/).
 
 # License
