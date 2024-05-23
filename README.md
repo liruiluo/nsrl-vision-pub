@@ -145,7 +145,7 @@ If you find our code implementation helpful for your own research or work, pleas
 @article{luo2024insight,
   title={INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with Language Explanations},
   author={Luo, Lirui and Zhang, Guoxi and Xu, Hongming and Yang, Yaodong and Fang, Cong and Li, Qing},
-  journal={arXiv preprint arXiv:2403.12451},
+  journal={ICML},
   year={2024}
 }
 ```
