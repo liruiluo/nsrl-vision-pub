@@ -2,7 +2,7 @@
 
 # INSIGHT: End-to-End Neuro-Symbolic Visual Reinforcement Learning with Language Explanations
 
-### ICML 2024
+### ICML 2024 (Spotlight)
 
 **[Lirui Luo](https://liruiluo.github.io/), [Guoxi Zhang](https://guoxizhang.com/), [Hongming Xu](), [Yaodong Yang](https://www.yangyaodong.com/), [Cong Fang](https://congfang-ml.github.io/), [Qing li](https://liqing-ustc.github.io/)**
 
